@@ -6,7 +6,11 @@
  * getFlags(arr); // [1, 2, 3, 4, 5, 6]
  */
 const getFlags = arr => {
-  /* your logic here...*/
+  var results = [];
+    arr.forEach(obj => {
+        results.push(obj.flags);
+    });
+    return results.flat();
 };
 
 export default getFlags;
